@@ -30,6 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // checking if input is empty or not
     if (taskText !== "") {
+
+      // creating li tag for task input
       const taskItem = document.createElement("li");
 
     
@@ -135,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
-  
+// adding completed task button to filter task that have been completed   
   completedTasks.addEventListener("click", function (){
     const tasks = taskList.querySelectorAll('#Task-List li');
     tasks.forEach((task) => {
@@ -144,7 +146,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
      
-  
+ // Adding uncompleted task button to filter tasks that have not completed  
   uncompletedTasks.addEventListener("click", function (){
    
     const tasks = taskList.querySelectorAll("li");
@@ -154,7 +156,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   
-  
+  // adding button to show all tasks completed and uncompleted 
   allTasks.addEventListener("click", () => {
     
     const tasks = taskList.querySelectorAll("li");
