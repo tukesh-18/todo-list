@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do-list</title>
+    <script src="https://kit.fontawesome.com/6ce13efdad.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="main-container">
+        <div class="contents">
+            <div class="input-container">
+                <i id="notes"  class="fa-solid fa-list"></i>
+                <input type="text" id="fname" name="fname" placeholder="Enter Your Task..." class="todo-input">
+                <button id="add-button">
+                    <i id="add"  class="fa-solid fa-plus"></i>
+                </button>
+
+            </div>
+            
+            <div id="group">
+                <p id="completeall-tasks"><i class="fa-solid fa-check fa-beat" style="color: #00ff40;"></i> Complete all tasks </p>
+                <p id="clearTasks">Clear tasks</p>
+            </div>
+            
+            <hr>
+            <ul id="Task-List">
+
+            </ul>
+
+            <hr>
+            
+            <div id="group">
+                <p id="leftTasks">tasks left</p>
+                <div id="group1" class="filter-todo">
+                    <p id="AllTasks">All</p>
+                    
+                    <div >
+                        <p id="completed-Tasks">completed</p>
+                        <!-- <button type="button" id="completed-Tasks">completed</button> -->
+                        <ul id="completed-Tasks-list">
+
+                        </ul>
+                    </div>
+                    <p id="Uncompleted-Tasks">Uncompleted</p>
+                </div>
+             </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

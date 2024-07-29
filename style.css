@@ -1,0 +1,143 @@
+.main-container{
+    background-color: #6bb8de;
+    height: auto;
+    width: 50%;
+    margin: 100px 420px;
+    border-radius: 15px;
+}
+
+.contents{
+    background: linear-gradient(to bottom right, #00ffff 0%, #ffff66 100%);
+    height: auto;
+    width: 100%;
+    /* margin: 10px 10px; */
+    border-radius: 15px;
+}
+
+.input-container {
+    position: relative;
+    width: fit-content;
+    display: inline-block;
+    margin-left: 140px;
+}
+
+#fname {
+    margin: 10px 30px;
+    height: 50px;
+    width: 400px;
+    padding: 5px 5px 5px 30px; /* Adjust padding to accommodate the icon */
+    text-align: center;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+#notes {
+    position: absolute;
+    left: 40px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Ensure icon does not interfere with input */
+    font-size: 18px; /* Adjust size as needed */
+    color: #555; /* Adjust color as needed */
+}
+#notes:hover{
+    cursor: pointer;
+}
+
+
+#add{
+    position: absolute;
+    left: 400px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+}
+
+#add:hover{
+    cursor: pointer;
+}
+#group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#group1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    
+}
+#completeall-tasks{
+    cursor: pointer;
+}
+#clearTasks{
+    cursor: pointer;
+}
+
+#leftTasks:hover{
+    cursor: pointer;
+}
+#AllTasks:hover{
+    cursor: pointer;
+}
+
+
+#completed-Tasks:hover{
+    cursor: pointer;
+}
+
+
+#Uncompleted-Tasks:hover{
+    cursor: pointer;
+}
+
+
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.delete-button{
+    margin-left: 320px;
+    margin-right: 25px;
+    border: none;
+    background-color: #ccff99;
+    /* color: black; */
+}
+
+.delete-button:hover{
+    cursor:pointer;
+}
+.checkbutton{
+    padding: 4px;
+    margin-right: 25px;
+}
+.checkbutton:hover{
+    cursor: pointer;
+}
+.todo-item{
+    margin-left: 5px;
+    display: flex;
+}
+
+li.todo-item{
+    display: flex;
+}
+  
+
+
+.grouped{
+    display: flex;
+    flex-direction: column;
+}
+
+hr{
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1); /* Adjust color and opacity */
+    margin: 20px 0; /* Adjust spacing around the line */
+}
