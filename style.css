@@ -83,7 +83,7 @@
 #AllTasks:hover{
     cursor: pointer;
 }
-#AllTasks{
+#completed-Tasks{
 background-color: #4CAF50; /* Green */
   color: white;
   border: none;
